@@ -84,8 +84,12 @@ const Sidebar = () => {
                     </li>
                 </ul>
             </div>
-            <div className="bottom">color options</div>
-            <div className="colorOptions">
+            <div className="bottom">
+
+                <div className="colorOption"> 
+                </div>
+                <div className="colorOption"> 
+                </div>
 
             </div>
         </div>
