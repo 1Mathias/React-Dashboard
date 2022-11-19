@@ -1,4 +1,6 @@
 import React from 'react';
+import Chart from '../../components/chart/Chart';
+import Featured from '../../components/featured/Featured';
 import Navbar from '../../components/navbar/Navbar';
 import Sidebar from '../../components/sidebar/Sidebar';
 import Widget from '../../components/widget/Widget';
@@ -12,13 +14,15 @@ function Home() {
                 <Navbar />
 
                 <div className="widgets">
-                    <Widget />
-                    <Widget />
-                    <Widget />
-                    <Widget />
-                    <Widget />
+                    <Widget type="user" />
+                    <Widget type="order" />
+                    <Widget type="earning" />
+                    <Widget type="balance" />
                 </div>
-
+                <div className="charts">
+                    <Featured />
+                    <Chart />
+                </div>
             </div>
         </div>
     )
